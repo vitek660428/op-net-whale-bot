@@ -1,7 +1,7 @@
 // api/bot.js
 const TelegramBot = require('node-telegram-bot-api');
 
-const token = process.env.TELEGRAM_TOKEN;
+const token = process.env.TELEGRAM_TOKEN; // токен из переменных окружения
 const bot = new TelegramBot(token);
 
 module.exports = async (req, res) => {
